@@ -1,0 +1,17 @@
+{
+  "name": "jsonfilter",
+  "module": "index.ts",
+  "type": "module",
+  "scripts": {
+    "dev": "bun index.ts --watch",
+    "start": "bun index.ts"
+  },
+  "devDependencies": {
+    "@types/ace": "^0.0.52",
+    "@types/bun": "latest",
+    "@types/jsoneditor": "^9.9.5"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  }
+}

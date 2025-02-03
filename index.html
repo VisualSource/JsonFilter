@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON Viewer</title>
+    <link href="./src/style.css" rel="stylesheet" type="text/css"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/jsoneditor/10.1.2/jsoneditor.min.css" rel="stylesheet" type="text/css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsoneditor/10.1.2/jsoneditor.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/ace-builds@1.37.5/src-min-noconflict/ace.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./src/script.ts" type="module"></script>
+</head>
+<body>
+   <aside>
+        <div class="settings">
+            <h4>Settings</h4>
+            <hr/>
+            <div class="input-content">
+                <input class="input-cl" placeholder="http://urltofile.json" id="content-url" type="url"/>
+                <button id="btn-load-json" class="btn">View</button>
+            </div>
+        </div>
+       
+        <div class="filter-list">
+            <h4>Filters</h4>
+            <hr/>
+            <div class="filter-controls">
+                <div>
+                    <button id="btn-filter-reset" class="btn">Reset</button>
+                    <button id="btn-filter-add" class="btn">Add Filter</button>
+                    <select id="select-filter-groups"></select>
+                </div>
+                <div>
+                    <button class="btn" id="btn-filter-groups-add">New Group</button>
+                    <button class="btn" id="btn-filter-groups-del">Remove Group</button>
+                </div>
+            </div>
+            <ul id="filters"></ul>
+        </div>
+    </aside>
+    <main id="json-editor"></main>
+</body>
+</html>

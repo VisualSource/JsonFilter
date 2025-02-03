@@ -1,0 +1,117 @@
+* { box-sizing: border-box; }
+html,body { margin: 0; height: 100vh; width: 100vw; color: white; }
+body { display: flex; flex-direction: row; }
+aside {
+    height: 100%;
+    width: 20rem;
+    background-color: #222128;
+    display: flex;
+    flex-direction: column;
+}
+main {
+    height: 100%;
+    width: 100%;
+    background-color: #121117;
+}
+h4 {
+    margin-bottom: 0;
+}
+select {
+    border-radius: 0.05rem;
+    border: none;
+}
+
+.ace_editor {
+    margin: auto;
+}
+.input-cl {
+    border-radius: 0.05rem;
+}
+.settings {
+    padding: 0 1rem 0 1rem;
+    display: flex;
+    flex-direction: column;
+}
+.settings > hr {
+    width: 100%;
+}
+#content-container {
+    height: 100%;
+    width: 100%;
+}
+#filters {
+    overflow-y: scroll;
+    padding-left: 0;
+    padding-right: 0.5rem;
+    list-style: none;
+    height: 100%;
+}
+.filter-list {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow-y: hidden;
+}
+.filter-item {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+.filter-item > div {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    padding-bottom: 0.5rem;
+}
+.filter-item > div > select {
+    width: 100%;
+}
+.filter-item > textarea {
+    width: 100%;
+    color: white;
+    background-color: #121117;
+    border: none;
+    outline: none;
+    border-radius: 0.05rem;
+}
+.input-content {
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.input-content > input {
+    width: 100%;
+}
+.filter-list {
+    padding: 0 1rem 0 1rem;
+    display: flex;
+    flex-direction: column;
+}
+.filter-list > hr {
+    width: 100%;
+    padding: 0.5 1rem
+}
+.btn {
+    border-radius: 0.05rem;
+    border: none
+}
+.btn:hover {
+    opacity: 0.9;
+}
+.btn-error {
+    background-color: red;
+    color: white;
+}
+.filter-controls {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+}
+
+.filter-controls > div {
+    display: flex;
+    gap: 0.2rem;
+}
+#btn-filter-reset, #btn-filter-add, #select-filter-groups, #btn-filter-groups-add, #btn-filter-groups-del {
+    width: 100%;
+}
