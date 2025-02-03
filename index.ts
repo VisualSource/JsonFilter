@@ -6,6 +6,7 @@ Bun.serve({
     static: {
         "/": home
     },
+    lowMemoryMode: true,
     fetch() {
         return new Response("hello world");
     }
