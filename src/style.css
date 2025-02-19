@@ -21,6 +21,50 @@ select {
     border: none;
 }
 
+ul#source-list {
+    padding: 0;
+}
+
+ul#source-list > li {
+    width: 100%;
+    list-style: none;
+}
+
+.flex {
+    display: flex;
+}
+.flex-col {
+    flex-direction: column;
+}
+.w-full {
+    width: 100%;
+}
+.gap-2 {
+    gap: 2px;
+}
+.gap-4 {
+    gap: 4px;
+}
+
+ul#source-list > li > input {
+    width: 100%;
+    border: none;
+}
+.source-li {
+    display: inline-flex;
+    gap: 4px;
+}
+
+#dialog-form {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+#dialog-form > div {
+     justify-content: flex-end;
+}
+
 .ace_editor {
     margin: auto;
 }
@@ -74,7 +118,6 @@ select {
     border-radius: 0.05rem;
 }
 .input-content {
-    padding: 0.5rem;
     display: flex;
     flex-direction: column;
     gap: 0.5rem;

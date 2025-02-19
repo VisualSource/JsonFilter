@@ -16,9 +16,37 @@
             <h4>Settings</h4>
             <hr/>
             <div class="input-content">
-                <input class="input-cl" placeholder="http://urltofile.json" id="content-url" type="url"/>
-                <button id="btn-load-json" class="btn">View</button>
+                <ul id="source-list"></ul>
+                <div class="flex gap-4">
+                    <button class="btn w-full" id="add-source" type="button">Add</button>
+                </div>
             </div>
+            <dialog id="source-input-url">
+                <form method="dialog" id="dialog-form">
+                    <div class="flex flex-col">
+                        <label>Source</label>
+                        <input placeholder="url" name="source" type="url" required minlength="6"/>
+                    </div>
+                    <div class="flex gap-4">
+                        <button class="btn btn-error" type="button" id="dialog-add-btn-cancel">Cancel</button>
+                        <button class="btn" type="submit">Ok</button>
+                    </div>
+                </form>
+            </dialog>
+
+            <dialog id="source-edit-dialog">
+                <form method="dialog" id="dialog-edit-form">
+                    <div class="flex flex-col">
+                        <input hidden name="id"/>
+                        <label>Source</label>
+                        <input placeholder="url" name="source" type="url" required minlength="6"/>
+                    </div>
+                    <div class="flex gap-4">
+                        <button class="btn btn-error" type="button" id="btn-dialog-edit-cancel">Cancel</button>
+                        <button class="btn" type="submit">Ok</button>
+                    </div>
+                </form>
+            </dialog>
         </div>
        
         <div class="filter-list">
